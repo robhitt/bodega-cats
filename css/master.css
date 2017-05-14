@@ -64,12 +64,17 @@ img {
   transition: all 300ms;
 }
 
+#contact-small {
+  display: none;
+}
+
 @media only screen and (max-width: 769px) {
   .container {
     top: 0;
   }
 
-  a[class^="btn"] {
+  a[class^="btn"],
+  #contact-small {
     display: inline-block;
     margin: 25px 0 0 0;
     text-decoration: none;
@@ -85,6 +90,11 @@ img {
     transition: all ease-in-out 300ms;
     width: 275px
   }
+
+  #contact {
+    display: none;
+  }
+
 
   p.up {
     position: relative;
